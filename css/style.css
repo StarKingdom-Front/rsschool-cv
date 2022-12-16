@@ -1,0 +1,255 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: rgb(27, 25, 25);
+}
+
+._container {
+    max-width: 1221px;
+    /* padding: 0px 15px; */
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__body {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(198, 195, 47);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202026;
+}
+
+.logo {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__photo {
+    width: 32%;
+}
+
+.header__photo img {
+    width: 100%;
+}
+
+.header__body nav {
+    background-color:#202026;
+    padding: 15px 15px;
+}
+
+.header__body nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #202026;
+}
+
+.header__body nav ul li a:hover {
+    color:rgb(198, 195, 47);
+}
+
+.main__body {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education__body {
+    padding-top: 40px;
+}
+
+.education h3 {
+    font-size: 20px;
+    color: white;
+    margin-top: 16px;
+}
+
+.education h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.education p {
+    font-size: 16px;
+    color: yellowgreen;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.education p:hover {
+    color: blue;
+}
+
+.skills h3 {
+    font-size: 20px;
+    color: white;
+    margin-top: 16px;
+}
+
+.skills ul {
+    list-style-type: square;
+}
+
+.skills ul li {
+    font-size: 16px;
+    color: yellow;
+    margin-top: 8px;
+}
+
+.skills ul li:hover {
+    color: blue;
+}
+
+.about__body {
+    width: 70%;
+    background-color: rgb(198, 195, 47);
+}
+
+.about__me {
+    padding: 30px;
+}
+
+.about__me h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__me p {
+    font-size: 16px;
+    color: #202026;
+    margin-top: 20px
+}
+
+.about__me ul li {
+    font-size: 16px;
+    color: #202026;
+}
+
+.about__me ul {
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #2d2e2e;
+    padding: 30px;
+    width: 100%;
+}
+
+code {
+    width: 100%;
+}
+
+.footer__contact {
+    width: 30%;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer__body {
+    padding: 20px;
+}
+
+.footer__contact h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.footer__contact ul {
+    list-style-type: square;
+}
+
+.footer__contact ul li {
+    font-size: 16px;
+    color: yellow;
+    margin-top: 8px;
+}
+
+.footer__contact p {
+    font-size: 10px;
+    color: #202026;
+    margin-top: 20px
+}
+
+.footer__contact a {
+    color: yellow;
+}
+
+.footer__contact a:hover {
+    color: blue;
+}
+
+.footer__contact ul li:hover {
+    color: blue;
+}
+
+.footer__body {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__rs {
+    width: 70%;
+}
+
+.footer__rs a img {
+    width: 100%;
+}
+
+@media (max-width: 1278px) {
+    .main__body {
+        flex-direction: column;
+        margin-right: -30px;
+    }
+
+    .education__body {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about__body {
+        width: 100%;
+    }
+
+    .footer__body {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    code {
+        display: none;
+    }
+}
+
+@media (max-width: 1278px) {
+    .header__body nav ul {
+        flex-direction: column;
+        align-items:center;
+    }
+}

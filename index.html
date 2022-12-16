@@ -8,6 +8,132 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Gladyshuk Aleksey</h1>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__body _container">
+                <div class="logo">
+                    <div class="header__photo">
+                        <img src="img/logo.png" alt="photo">
+                    </div>
+                    <h1>GLADYSHUK ALEKSEY</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Code">Code</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__body _container">
+                <div class="education__body">
+                    <div class="education">
+                        <h2>Education</h2>
+                        <h3>Belarusian State University of Transport</h3>
+                        <p>specialty - engineer</p>
+                        <h3>Udemy</h3>
+                        <a target="_blank" href="https://www.udemy.com/course/javascript_full/"><p>JS+React (in proccess)</p></a>
+                        <h3>IT-Academy</h3>
+                        <a target="_blank" href="https://www.it-academy.by/course/front-end-developer/fd1-razrabotka-veb-saytov-s-ispolzovaniem-html-css-i-javascript/"><p>HTML,CSS&JS</p></a>
+                        <h3>RS School</h3>
+                        <a href="https://rs.school/js/"><p>JS/FE 2021Q4 (in proccess)</p></a>
+                    </div>
+                    <div class="skills">
+                        <h3 id="Skills">Slills</h3>
+                        <ul>
+                            <li>JS</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>GitHub</li>
+                            <li>Figme</li>
+                            <li>jQuery</li>
+                            <li>SwiperJS</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__body">
+                    <div id="About" class="about__me">
+                        <h2>ABOUT ME:</h2>
+                        <p>I work in the SEO team. I am looking for a new way to gain knowledge, 
+                            experience and earnings. For this purpose, I learned HTML, CSS & JS to try something new.</p>
+                        <h2>My strengths:</h2>
+                        <ul>
+                            <li>I quickly join the process;</li>
+                            <li>Can decisively make difficult decisions;</li>
+                            <li>If I do not know something, I quickly correct this oversight.</li>
+                        </ul>
+                        <h2>LANGUAGES:</h2>
+                        <ul>
+                            <li>Russian - native speaker</li>
+                            <li>English - A2</li>
+                            <li>Belorussian</li>
+                        </ul>
+                        <h2>CODE EXAMPLE</h2>
+                        <pre id="Code">
+                            <code>
+                                function hideTabContent() {
+    
+                                    tabsContent.forEach(item => {
+                                        item.classList.add('hide');
+                                        item.classList.remove('show', 'fade');
+                                    });
+                                
+                                    tabs.forEach(item => {
+                                        item.classList.remove('tabheader__item_active');
+                                    });
+                                }
+                                
+                                function showTabContent(i = 0) {
+                                    tabsContent[i].classList.add('show', 'fade');
+                                    tabsContent[i].classList.remove('hide');
+                                    tabs[i].classList.add('tabheader__item_active');
+                                }
+                                
+                                hideTabContent();
+                                showTabContent();
+                                
+                                tabsParent.addEventListener('click', function(event) {
+                                    const target = event.target;
+                                    if(target && target.classList.contains('tabheader__item')) {
+                                        tabs.forEach((item, i) => {
+                                            if (target == item) {
+                                                hideTabContent();
+                                                showTabContent(i);
+                                            }
+                                        });
+                                    }
+                                });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__body _container">
+                <div class="footer__contact">
+                    <h2 id="Contacts">Contacts</h2>
+                    <ul>
+                        <li><a href="tel:+375445314829">Phone</a></li>
+                        <li><a href="mailto:glinkirk@gmail.com">E-mail</a></li>
+                        <li><a href=https://t.me/starkingdom">Telegram</a></li>
+                        <li><a href="https://github.com/StarKingdom-Front">GitHub</a></li>
+                        <p>16.12.2022</p>
+                    </ul>
+                </div>
+                <div class="footer__rs">
+                    <a href="https://rs.school/js-stage0/">
+                        <img src="img/rs_school_js.svg" alt="Rs-school">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
