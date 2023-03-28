@@ -84,7 +84,7 @@
                                         item.classList.remove('show', 'fade');
                                     });
 
-                                    tabs.forEach(item => {
+                                    tabs.forEach(item =&gt; {
                                         item.classList.remove('tabheader__item_active');
                                     });
                                 }
@@ -100,8 +100,8 @@
 
                                 tabsParent.addEventListener('click', function(event) {
                                     const target = event.target;
-                                    if(target && target.classList.contains('tabheader__item')) {
-                                        tabs.forEach((item, i) => {
+                                    if(target &amp;&amp; target.classList.contains('tabheader__item')) {
+                                        tabs.forEach((item, i) =&gt; {
                                             if (target == item) {
                                                 hideTabContent();
                                                 showTabContent(i);
